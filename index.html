@@ -23,7 +23,7 @@
     --radius:14px;
     --max:1080px;
   }
- 
+
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
@@ -33,10 +33,10 @@
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
- 
+
   [data-lang="en"] .ka{display:none;}
   [data-lang="ka"] .en{display:none;}
- 
+
   h1,h2,h3,.display{
     font-family:'Fraunces','Noto Serif Georgian',serif;
     font-weight:600;
@@ -45,7 +45,7 @@
   }
   a{color:inherit; text-decoration:none;}
   .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
- 
+
   /* ---------- NAV ---------- */
   nav{
     position:sticky; top:0; z-index:50;
@@ -64,7 +64,7 @@
   .nav-links{display:flex; gap:28px; align-items:center;}
   .nav-links a{font-size:.92rem; font-weight:500; color:var(--ink-soft); transition:color .2s ease;}
   .nav-links a:hover{color:var(--ink);}
- 
+
   .lang-toggle{
     display:flex; border:1px solid var(--ink); border-radius:999px;
     overflow:hidden; font-size:.78rem; font-weight:600; cursor:pointer; user-select:none;
@@ -75,10 +75,10 @@
     transition:background .2s ease, color .2s ease;
   }
   .lang-toggle button.active{background:var(--ink); color:var(--paper);}
- 
+
   .mobile-hide{display:flex;}
   @media (max-width:640px){ .mobile-hide{display:none;} }
- 
+
   /* ---------- HERO ---------- */
   header.hero{ position:relative; padding:92px 28px 50px; overflow:hidden; }
   header.hero::before{
@@ -109,10 +109,10 @@
   }
   .hero p.lede{ font-size:1.08rem; color:var(--ink-soft); max-width:48ch; margin-bottom:26px; }
   @media (max-width:860px){ .hero p.lede{margin-left:auto; margin-right:auto;} }
- 
+
   .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:26px;}
   @media (max-width:860px){ .cta-row{justify-content:center;} }
- 
+
   .btn{
     display:inline-flex; align-items:center; gap:8px;
     padding:13px 24px; border-radius:999px; font-weight:600; font-size:.94rem;
@@ -122,7 +122,7 @@
   .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(124,92,191,.32);}
   .btn-ghost{border:1.5px solid var(--ink); color:var(--ink);}
   .btn-ghost:hover{transform:translateY(-2px); background:var(--ink); color:var(--paper);}
- 
+
   .stat-row{display:flex; gap:10px; flex-wrap:wrap;}
   @media (max-width:860px){ .stat-row{justify-content:center;} }
   .chip{
@@ -131,7 +131,7 @@
     border-radius:999px; padding:8px 16px; font-size:.82rem; font-weight:600; color:var(--ink-soft);
   }
   .chip b{color:var(--ink); font-weight:700;}
- 
+
   .hero-graph svg{width:100%; height:auto; display:block; overflow:visible;}
   .draw-path{ stroke-dasharray:900; stroke-dashoffset:900; animation:draw 2.1s ease forwards .3s; }
   @keyframes draw{ to{stroke-dashoffset:0;} }
@@ -151,14 +151,14 @@
     .draw-path{animation:none; stroke-dashoffset:0;}
     .travel-dot{animation:none; opacity:0;}
   }
- 
+
   /* ---------- SECTION SHELL ---------- */
   section{padding:78px 28px;}
   .section-head{max-width:640px; margin-bottom:44px;}
   .section-head .eyebrow{margin-bottom:10px;}
   .section-head h2{font-size:clamp(1.6rem,3.4vw,2.2rem);}
   .section-head p{color:var(--ink-soft); margin-top:12px; font-size:1.02rem;}
- 
+
   /* ---------- ABOUT ---------- */
   .about-top{
     display:grid; grid-template-columns:auto 1fr; gap:44px; align-items:start;
@@ -176,7 +176,7 @@
   }
   .about-text p.intro{color:var(--ink-soft); font-size:1.06rem; max-width:62ch; margin-bottom:6px;}
   .about-text strong{color:var(--ink);}
- 
+
   .credential-list{
     max-width:var(--max); margin:0 auto 30px; list-style:none;
     background:var(--paper-deep); border:1px solid var(--card-border); border-radius:var(--radius);
@@ -192,12 +192,12 @@
     background:var(--purple);
   }
   .credential-list li:nth-child(even) .dot{background:var(--gold);}
- 
+
   .about-closing{
     max-width:66ch; margin:0 auto; color:var(--ink-soft); font-size:1.02rem; text-align:center;
   }
   .about-closing strong{color:var(--ink);}
- 
+
   /* ---------- SUBJECTS ---------- */
   .subject-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; max-width:var(--max); margin:0 auto; }
   @media (max-width:720px){ .subject-grid{grid-template-columns:1fr;} }
@@ -211,7 +211,7 @@
   .subject-card:nth-child(even) .subject-symbol{color:var(--purple);}
   .subject-card h3{font-size:1.12rem; margin-bottom:8px;}
   .subject-card p{color:var(--ink-soft); font-size:.96rem;}
- 
+
   /* ---------- SCHEDULE / PRICING ---------- */
   .schedule-wrap{ max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:22px; }
   @media (max-width:720px){ .schedule-wrap{grid-template-columns:1fr;} }
@@ -220,14 +220,14 @@
   .info-card h3{font-size:1.05rem; margin-bottom:10px;}
   .info-card p{color:var(--ink-soft); font-size:.98rem;}
   .info-card .tag{ display:inline-block; margin-top:14px; font-size:.78rem; font-weight:600; color:var(--purple); letter-spacing:.03em; text-transform:uppercase; }
- 
+
   /* ---------- TESTIMONIALS ---------- */
   .testimonial-slot{
     max-width:640px; margin:0 auto; border:1.5px dashed var(--card-border); border-radius:var(--radius);
     padding:40px 30px; text-align:center; color:var(--ink-soft); font-style:italic;
   }
   .testimonial-slot span.mark{ display:block; font-family:'Fraunces','Noto Serif Georgian',serif; font-style:normal; font-size:1.6rem; color:var(--gold-soft); margin-bottom:8px; }
- 
+
   /* ---------- CONTACT / FOOTER ---------- */
   footer{ background:var(--ink); color:var(--paper); padding:70px 28px 34px; }
   .footer-inner{max-width:var(--max); margin:0 auto;}
@@ -240,6 +240,7 @@
     padding:20px; transition:background .2s ease, transform .2s ease;
   }
   .contact-card:hover{background:rgba(255,255,255,0.1); transform:translateY(-3px);}
+  .contact-icon{display:block; font-size:1.35rem; margin-bottom:8px; line-height:1;}
   .contact-card .label{ display:block; font-size:.74rem; text-transform:uppercase; letter-spacing:.06em; color:var(--gold-soft); margin-bottom:6px; font-weight:600; }
   .contact-card .value{font-size:.94rem; font-weight:500; word-break:break-word;}
   .foot-bottom{
@@ -250,7 +251,7 @@
 </style>
 </head>
 <body>
- 
+
 <nav id="nav">
   <div class="nav-inner">
     <div class="brand">Tekla <span>Tskhadadze</span></div>
@@ -266,7 +267,7 @@
     </div>
   </div>
 </nav>
- 
+
 <header class="hero">
   <div class="hero-inner">
     <div>
@@ -275,12 +276,12 @@
         <span class="ka">მათემატიკის რეპეტიტორი · მათემატიკის ბაკალავრიატის სტუდენტი</span>
       </span>
       <h1>
-        <span class="en">Making math make <em>sense</em>, not just answers.</span>
-        <span class="ka">მათემატიკა — <em>გასაგები</em>, და არა უბრალოდ პასუხები.</span>
+        <span class="en">There's a reason behind <em>every</em> equation.</span>
+        <span class="ka">მათემატიკაში <em>ყველაფერს</em> თავისი მიზეზი აქვს.</span>
       </h1>
       <p class="lede">
-        <span class="en">Individual lessons from primary school through calculus and SAT prep — built around real understanding and tailored to every pupil.</span>
-        <span class="ka">ინდივიდუალური მეცადინეობები დაწყებითი კლასებიდან კალკულუსამდე და SAT-მდე — ნამდვილ გააზრებაზე დაფუძნებული და მორგებული ყოველ მოსწავლეზე.</span>
+        <span class="en">Math lessons — individually online, or in small groups in Kutaisi. From 5th grade through the national exam program and higher mathematics — focused on real understanding, tailored to each student's goals and needs.</span>
+        <span class="ka">მათემატიკის გაკვეთილები — ონლაინ ინდივიდუალურად და ქუთაისში, მცირე ჯგუფებში. მე-5 კლასიდან სააბიტურენტო პროგრამამდე და უმაღლეს მათემატიკამდე — მასალის გააზრებაზე აქცენტით, თითოეული მოსწავლის მიზნებსა და საჭიროებებზე მორგებული.</span>
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://wa.me/995557425325" target="_blank" rel="noopener">
@@ -292,8 +293,7 @@
       </div>
       <div class="stat-row">
         <span class="chip"><b>5+</b> <span class="en">years teaching children</span><span class="ka">წლის გამოცდილება</span></span>
-        <span class="chip"><span class="en">Certified,</span><span class="ka">სერტიფიცირებული,</span> <b>I–XII</b></span>
-        <span class="chip"><span class="en">School medalist</span><span class="ka">სკოლის მედალოსანი</span></span>
+        <span class="chip"><span class="en">Certified:</span><span class="ka">სერტიფიცირებული:</span> <b>I–VI, VII–XII</b></span>
       </div>
     </div>
     <div class="hero-graph">
@@ -320,13 +320,13 @@
     </div>
   </div>
 </header>
- 
+
 <section id="about">
   <div class="section-head">
     <span class="eyebrow"><span class="en">About</span><span class="ka">ჩემს შესახებ</span></span>
     <h2><span class="en">Why study with me</span><span class="ka">რატომ ჩემი გაკვეთილები?</span></h2>
   </div>
- 
+
   <div class="about-top">
     <div class="avatar">თ</div>
     <div class="about-text">
@@ -334,15 +334,15 @@
       <p class="intro ka">მე ვარ <strong>თეკლა ცხადაძე</strong> — მათემატიკის ბაკალავრის სტუდენტი, რომელსაც წლებია, ნამდვილად უყვარს ეს საგანი და ამ გრძნობის სხვებისთვის გაზიარება. მცირედი ინფორმაცია ჩემს შესახებ:</p>
     </div>
   </div>
- 
+
   <ul class="credential-list">
     <li><span class="dot"></span>
       <span class="en">Studying Mathematics and its Applications (English-taught program) at <strong>Kutaisi International University</strong>, on a full scholarship — currently in my 3rd year.</span>
       <span class="ka">ვსწავლობ <strong>ქუთაისის საერთაშორისო უნივერსიტეტის</strong> მათემატიკისა და გამოყენებების ინგლისურენოვან ფაკულტეტზე, სრული დაფინანსებით — ამჟამად მე-3 კურსზე.</span>
     </li>
     <li><span class="dot"></span>
-      <span class="en">Graduated from Andria Razmadze Kutaisi Public School №41 (physics-mathematics profile) with a medal.</span>
-      <span class="ka">დავასრულე ანდრია რაზმაძის სახელობის ქ. ქუთაისის №41 ფიზიკა-მათემატიკური საჯარო სკოლა მედალზე.</span>
+      <span class="en">Graduated from Andria Razmadze Kutaisi Public School №41 (<strong>physics-mathematics profile</strong>) with a medal.</span>
+      <span class="ka">დავასრულე ანდრია რაზმაძის სახელობის ქ. ქუთაისის №41 <strong>ფიზიკა-მათემატიკური</strong> საჯარო სკოლა მედალზე.</span>
     </li>
     <li><span class="dot"></span>
       <span class="en">5 years of experience working with children.</span>
@@ -353,26 +353,30 @@
       <span class="ka">ჩაბარებული მაქვს მასწავლებლის სასერტიფიკაციო გამოცდა მათემატიკაში (I–VI და VII–XII კლასი).</span>
     </li>
   </ul>
- 
+
   <p class="about-closing en"><strong>Energetic, motivated, and communicative</strong> — I love mathematics and I love working with pupils. I teach using both school material and extra material beyond the curriculum, and every lesson plan is built individually around the child.</p>
   <p class="about-closing ka"><strong>ვარ ენერგიული, მოტივირებული და კომუნიკაბელური</strong> — ძალიან მიყვარს მათემატიკა და მოსწავლეებთან მუშაობა. ვასწავლი როგორც სასკოლო, ისე კლასგარეშე მასალის გამოყენებით, სასწავლო პროგრამა კი მორგებულია ყოველ ბავშვზე ინდივიდუალურად.</p>
 </section>
- 
+
 <section id="subjects" style="background:var(--paper-deep); border-top:1px solid var(--grid-line); border-bottom:1px solid var(--grid-line);">
   <div class="section-head">
     <span class="eyebrow"><span class="en">Subjects</span><span class="ka">საგნები</span></span>
     <h2><span class="en">What I teach</span><span class="ka">რას ვასწავლი</span></h2>
-    <p><span class="en">Four areas, one approach: clarity first, speed second.</span><span class="ka">ოთხი მიმართულება, ერთი მიდგომა — ჯერ სიცხადე, შემდეგ სისწრაფე.</span></p>
   </div>
   <div class="subject-grid">
     <div class="subject-card">
       <span class="subject-symbol">Σ</span>
       <h3><span class="en">School Mathematics</span><span class="ka">სასკოლო მათემატიკა</span></h3>
-      <p><span class="en">Grades 1–12 — arithmetic, algebra, geometry and trigonometry, matched to the school curriculum.</span><span class="ka">1–12 კლასი — არითმეტიკა, ალგებრა, გეომეტრია და ტრიგონომეტრია, სასკოლო პროგრამის შესაბამისად.</span></p>
+      <p><span class="en">Grades 5–12 — arithmetic, algebra, geometry, trigonometry, and stereometry, matched to the school curriculum.</span><span class="ka">5–12 კლასი — არითმეტიკა, ალგებრა, გეომეტრია, ტრიგონომეტრია და სტერეომეტრია, სასკოლო პროგრამის შესაბამისად.</span></p>
+    </div>
+    <div class="subject-card">
+      <span class="subject-symbol">✓</span>
+      <h3><span class="en">National Exam Prep</span><span class="ka">ეროვნული გამოცდებისთვის მომზადება</span></h3>
+      <p><span class="en">Focused practice and exam strategy to prepare for Georgia's unified national exams.</span><span class="ka">მიზანმიმართული მეცადინეობები და გამოცდის სტრატეგია ერთიანი ეროვნული გამოცდებისთვის მომზადებისას.</span></p>
     </div>
     <div class="subject-card">
       <span class="subject-symbol">√x</span>
-      <h3><span class="en">Pre-University Math</span><span class="ka">საუნივერსიტეტო მოსამზადებელი კურსი</span></h3>
+      <h3><span class="en">Pre-University Preparation Course in Mathematics</span><span class="ka">საუნივერსიტეტო მოსამზადებელი კურსი მათემატიკაში</span></h3>
       <p><span class="en">Closing the gap between school and university-level coursework.</span><span class="ka">ხიდი სკოლასა და უნივერსიტეტის დონეს შორის.</span></p>
     </div>
     <div class="subject-card">
@@ -380,14 +384,9 @@
       <h3><span class="en">Calculus</span><span class="ka">კალკულუსი</span></h3>
       <p><span class="en">Limits, derivatives and integrals — explained step by step, with real intuition behind each rule.</span><span class="ka">ზღვრები, წარმოებულები და ინტეგრალები — ეტაპობრივად ახსნილი, ყოველი წესის მიღმა არსებული ლოგიკით.</span></p>
     </div>
-    <div class="subject-card">
-      <span class="subject-symbol">SAT</span>
-      <h3><span class="en">SAT Math Prep</span><span class="ka">SAT მათემატიკის მომზადება</span></h3>
-      <p><span class="en">Focused practice and test strategy for the SAT math section.</span><span class="ka">ფოკუსირებული სავარჯიშოები და სტრატეგია SAT-ის მათემატიკის ნაწილისთვის.</span></p>
-    </div>
   </div>
 </section>
- 
+
 <section id="schedule">
   <div class="section-head">
     <span class="eyebrow"><span class="en">Schedule &amp; Pricing</span><span class="ka">გრაფიკი და ფასები</span></span>
@@ -409,53 +408,47 @@
     </div>
   </div>
 </section>
- 
-<section id="testimonials" style="background:var(--paper-deep); border-top:1px solid var(--grid-line); border-bottom:1px solid var(--grid-line);">
-  <div class="section-head" style="margin-left:auto; margin-right:auto; text-align:center;">
-    <span class="eyebrow"><span class="en">Testimonials</span><span class="ka">შეფასებები</span></span>
-    <h2><span class="en">What students say</span><span class="ka">რას ამბობენ მოსწავლეები</span></h2>
-  </div>
-  <div class="testimonial-slot">
-    <span class="mark">"</span>
-    <span class="en">Testimonials coming soon.</span>
-    <span class="ka">შეფასებები მალე დაემატება.</span>
-  </div>
-</section>
- 
+
+
 <footer id="contact">
   <div class="footer-inner">
     <h2><span class="en">Let's find your time.</span><span class="ka">შევათანხმოთ დრო.</span></h2>
-    <p class="lede"><span class="en">Reach out on any of these — WhatsApp is fastest.</span><span class="ka">დამიკავშირდით ნებისმიერი გზით — WhatsApp ყველაზე სწრაფია.</span></p>
+    <p class="lede"><span class="en">Reach out however works best for you.</span><span class="ka">დამიკავშირდით თქვენთვის მოსახერხებელი გზით.</span></p>
     <div class="contact-grid">
       <a class="contact-card" href="tel:+995557425325">
+        <span class="contact-icon">📞</span>
         <span class="label"><span class="en">Phone</span><span class="ka">ტელეფონი</span></span>
         <span class="value">557 42 53 25</span>
       </a>
       <a class="contact-card" href="https://wa.me/995557425325" target="_blank" rel="noopener">
+        <span class="contact-icon">💬</span>
         <span class="label">WhatsApp</span>
         <span class="value">557 42 53 25</span>
       </a>
       <a class="contact-card" href="https://t.me/+995557425325" target="_blank" rel="noopener">
+        <span class="contact-icon">✈️</span>
         <span class="label">Telegram</span>
         <span class="value">557 42 53 25</span>
       </a>
       <a class="contact-card" href="mailto:tekla.tskhadadze@outlook.com">
+        <span class="contact-icon">✉️</span>
         <span class="label">Email</span>
         <span class="value">tekla.tskhadadze@outlook.com</span>
       </a>
       <a class="contact-card" href="https://www.facebook.com/tekla.tskhadadze.19/" target="_blank" rel="noopener">
+        <span class="contact-icon">📘</span>
         <span class="label">Facebook</span>
         <span class="value">tekla.tskhadadze.19</span>
       </a>
     </div>
     <div class="foot-bottom">
       <span>© 2026 Tekla Tskhadadze</span>
-      <span class="en">Built for pupils who want to actually understand it.</span>
-      <span class="ka">შექმნილია მოსწავლეებისთვის, ვისაც ნამდვილად სურს გაგება.</span>
+      <span class="en">All rights reserved.</span>
+      <span class="ka">ყველა უფლება დაცულია.</span>
     </div>
   </div>
 </footer>
- 
+
 <script>
   const buttons = document.querySelectorAll('#langToggle button');
   buttons.forEach(btn=>{
@@ -471,4 +464,3 @@
 </script>
 </body>
 </html>
- 
