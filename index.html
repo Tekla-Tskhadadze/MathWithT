@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tekla Tskhadadze — Mathematics Tutor</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%231C2541%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2C%20%27Times%20New%20Roman%27%2C%20serif%22%20font-size%3D%2236%22%20font-weight%3D%22700%22%20fill%3D%22%23E0A72B%22%20text-anchor%3D%22middle%22%3ET%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+Georgian:wght@500;700&family=Noto+Sans+Georgian:wght@400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
     --radius:14px;
     --max:1080px;
   }
-
+ 
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
@@ -32,10 +33,10 @@
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
-
+ 
   [data-lang="en"] .ka{display:none;}
   [data-lang="ka"] .en{display:none;}
-
+ 
   h1,h2,h3,.display{
     font-family:'Fraunces','Noto Serif Georgian',serif;
     font-weight:600;
@@ -44,7 +45,7 @@
   }
   a{color:inherit; text-decoration:none;}
   .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
-
+ 
   /* ---------- NAV ---------- */
   nav{
     position:sticky; top:0; z-index:50;
@@ -63,7 +64,7 @@
   .nav-links{display:flex; gap:28px; align-items:center;}
   .nav-links a{font-size:.92rem; font-weight:500; color:var(--ink-soft); transition:color .2s ease;}
   .nav-links a:hover{color:var(--ink);}
-
+ 
   .lang-toggle{
     display:flex; border:1px solid var(--ink); border-radius:999px;
     overflow:hidden; font-size:.78rem; font-weight:600; cursor:pointer; user-select:none;
@@ -74,10 +75,10 @@
     transition:background .2s ease, color .2s ease;
   }
   .lang-toggle button.active{background:var(--ink); color:var(--paper);}
-
+ 
   .mobile-hide{display:flex;}
   @media (max-width:640px){ .mobile-hide{display:none;} }
-
+ 
   /* ---------- HERO ---------- */
   header.hero{ position:relative; padding:92px 28px 50px; overflow:hidden; }
   header.hero::before{
@@ -108,10 +109,10 @@
   }
   .hero p.lede{ font-size:1.08rem; color:var(--ink-soft); max-width:48ch; margin-bottom:26px; }
   @media (max-width:860px){ .hero p.lede{margin-left:auto; margin-right:auto;} }
-
+ 
   .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:26px;}
   @media (max-width:860px){ .cta-row{justify-content:center;} }
-
+ 
   .btn{
     display:inline-flex; align-items:center; gap:8px;
     padding:13px 24px; border-radius:999px; font-weight:600; font-size:.94rem;
@@ -121,7 +122,7 @@
   .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(124,92,191,.32);}
   .btn-ghost{border:1.5px solid var(--ink); color:var(--ink);}
   .btn-ghost:hover{transform:translateY(-2px); background:var(--ink); color:var(--paper);}
-
+ 
   .stat-row{display:flex; gap:10px; flex-wrap:wrap;}
   @media (max-width:860px){ .stat-row{justify-content:center;} }
   .chip{
@@ -130,7 +131,7 @@
     border-radius:999px; padding:8px 16px; font-size:.82rem; font-weight:600; color:var(--ink-soft);
   }
   .chip b{color:var(--ink); font-weight:700;}
-
+ 
   .hero-graph svg{width:100%; height:auto; display:block; overflow:visible;}
   .draw-path{ stroke-dasharray:900; stroke-dashoffset:900; animation:draw 2.1s ease forwards .3s; }
   @keyframes draw{ to{stroke-dashoffset:0;} }
@@ -150,14 +151,14 @@
     .draw-path{animation:none; stroke-dashoffset:0;}
     .travel-dot{animation:none; opacity:0;}
   }
-
+ 
   /* ---------- SECTION SHELL ---------- */
   section{padding:78px 28px;}
   .section-head{max-width:640px; margin-bottom:44px;}
   .section-head .eyebrow{margin-bottom:10px;}
   .section-head h2{font-size:clamp(1.6rem,3.4vw,2.2rem);}
   .section-head p{color:var(--ink-soft); margin-top:12px; font-size:1.02rem;}
-
+ 
   /* ---------- ABOUT ---------- */
   .about-top{
     display:grid; grid-template-columns:auto 1fr; gap:44px; align-items:start;
@@ -171,12 +172,11 @@
     font-family:'Fraunces','Noto Serif Georgian',serif;
     font-size:2.6rem; font-weight:600; color:var(--gold);
     flex-shrink:0; box-shadow:0 0 0 8px var(--paper), 0 0 0 9px var(--grid-line);
-    margin:0 auto; overflow:hidden;
+    margin:0 auto;
   }
-  .avatar img{width:100%; height:100%; object-fit:cover; display:block;}
   .about-text p.intro{color:var(--ink-soft); font-size:1.06rem; max-width:62ch; margin-bottom:6px;}
   .about-text strong{color:var(--ink);}
-
+ 
   .credential-list{
     max-width:var(--max); margin:0 auto 30px; list-style:none;
     background:var(--paper-deep); border:1px solid var(--card-border); border-radius:var(--radius);
@@ -192,12 +192,12 @@
     background:var(--purple);
   }
   .credential-list li:nth-child(even) .dot{background:var(--gold);}
-
+ 
   .about-closing{
     max-width:66ch; margin:0 auto; color:var(--ink-soft); font-size:1.02rem; text-align:center;
   }
   .about-closing strong{color:var(--ink);}
-
+ 
   /* ---------- SUBJECTS ---------- */
   .subject-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; max-width:var(--max); margin:0 auto; }
   @media (max-width:720px){ .subject-grid{grid-template-columns:1fr;} }
@@ -211,7 +211,7 @@
   .subject-card:nth-child(even) .subject-symbol{color:var(--purple);}
   .subject-card h3{font-size:1.12rem; margin-bottom:8px;}
   .subject-card p{color:var(--ink-soft); font-size:.96rem;}
-
+ 
   /* ---------- SCHEDULE / PRICING ---------- */
   .schedule-wrap{ max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:22px; }
   @media (max-width:720px){ .schedule-wrap{grid-template-columns:1fr;} }
@@ -220,21 +220,20 @@
   .info-card h3{font-size:1.05rem; margin-bottom:10px;}
   .info-card p{color:var(--ink-soft); font-size:.98rem;}
   .info-card .tag{ display:inline-block; margin-top:14px; font-size:.78rem; font-weight:600; color:var(--purple); letter-spacing:.03em; text-transform:uppercase; }
-
+ 
   /* ---------- TESTIMONIALS ---------- */
   .testimonial-slot{
     max-width:640px; margin:0 auto; border:1.5px dashed var(--card-border); border-radius:var(--radius);
     padding:40px 30px; text-align:center; color:var(--ink-soft); font-style:italic;
   }
   .testimonial-slot span.mark{ display:block; font-family:'Fraunces','Noto Serif Georgian',serif; font-style:normal; font-size:1.6rem; color:var(--gold-soft); margin-bottom:8px; }
-
+ 
   /* ---------- CONTACT / FOOTER ---------- */
   footer{ background:var(--ink); color:var(--paper); padding:70px 28px 34px; }
   .footer-inner{max-width:var(--max); margin:0 auto;}
   footer h2{color:var(--paper); font-size:clamp(1.5rem,3vw,2rem); margin-bottom:12px;}
   footer p.lede{color:#B8BECF; max-width:48ch; margin-bottom:34px;}
-  .contact-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-bottom:48px; }
-  @media (max-width:720px){ .contact-grid{grid-template-columns:1fr 1fr;} }
+  .contact-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:16px; margin-bottom:48px; }
   @media (max-width:420px){ .contact-grid{grid-template-columns:1fr;} }
   .contact-card{
     background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.12); border-radius:12px;
@@ -251,7 +250,7 @@
 </style>
 </head>
 <body>
-
+ 
 <nav id="nav">
   <div class="nav-inner">
     <div class="brand">Tekla <span>Tskhadadze</span></div>
@@ -267,7 +266,7 @@
     </div>
   </div>
 </nav>
-
+ 
 <header class="hero">
   <div class="hero-inner">
     <div>
@@ -309,32 +308,33 @@
           <line x1="41" y1="200" x2="49" y2="200"/>
           <line x1="41" y1="130" x2="49" y2="130"/>
         </g>
-        <path id="fnPath" class="draw-path" d="M45,270 C90,270 100,90 140,90 C170,90 180,180 210,180 C240,180 250,90 280,90 C320,90 330,270 380,270"
+        <path id="fnPath" class="draw-path" d="M60,150 C85,80 105,80 130,150 C155,220 175,220 200,150 C225,80 245,80 270,150 C295,220 315,220 340,150"
               stroke="#7C5CBF" stroke-width="3.5" stroke-linecap="round" fill="none"/>
-        <circle cx="45" cy="270" r="4" fill="#1C2541"/>
-        <circle cx="380" cy="270" r="4" fill="#1C2541"/>
-        <circle class="travel-dot" r="5" fill="#1C2541" style="offset-path:path('M45,270 C90,270 100,90 140,90 C170,90 180,180 210,180 C240,180 250,90 280,90 C320,90 330,270 380,270');"/>
+        <circle cx="60" cy="150" r="4" fill="#E0A72B"/>
+        <circle cx="200" cy="150" r="4" fill="#E0A72B"/>
+        <circle cx="340" cy="150" r="4" fill="#E0A72B"/>
+        <circle class="travel-dot" r="5" fill="#1C2541" style="offset-path:path('M60,150 C85,80 105,80 130,150 C155,220 175,220 200,150 C225,80 245,80 270,150 C295,220 315,220 340,150');"/>
         <text x="356" y="288" font-family="Inter, sans-serif" font-size="12" fill="#8A8267">x</text>
         <text x="26" y="26" font-family="Inter, sans-serif" font-size="12" fill="#8A8267">y</text>
       </svg>
     </div>
   </div>
 </header>
-
+ 
 <section id="about">
   <div class="section-head">
     <span class="eyebrow"><span class="en">About</span><span class="ka">ჩემს შესახებ</span></span>
     <h2><span class="en">Why study with me</span><span class="ka">რატომ ჩემი გაკვეთილები?</span></h2>
   </div>
-
+ 
   <div class="about-top">
-    <div class="avatar"><img src="tekla.jpg" alt="Tekla Tskhadadze"></div>
+    <div class="avatar">თ</div>
     <div class="about-text">
       <p class="intro en">I'm <strong>Tekla Tskhadadze</strong> — a mathematics student who genuinely loves this subject and loves teaching it. Here's my background:</p>
       <p class="intro ka">მე ვარ <strong>თეკლა ცხადაძე</strong> — მათემატიკის ბაკალავრის სტუდენტი, რომელსაც წლებია, ნამდვილად უყვარს ეს საგანი და ამ გრძნობის სხვებისთვის გაზიარება. მცირედი ინფორმაცია ჩემს შესახებ:</p>
     </div>
   </div>
-
+ 
   <ul class="credential-list">
     <li><span class="dot"></span>
       <span class="en">Studying Mathematics and its Applications (English-taught program) at <strong>Kutaisi International University</strong>, on a full scholarship — currently in my 3rd year.</span>
@@ -353,11 +353,11 @@
       <span class="ka">ჩაბარებული მაქვს მასწავლებლის სასერტიფიკაციო გამოცდა მათემატიკაში (I–VI და VII–XII კლასი).</span>
     </li>
   </ul>
-
+ 
   <p class="about-closing en"><strong>Energetic, motivated, and communicative</strong> — I love mathematics and I love working with pupils. I teach using both school material and extra material beyond the curriculum, and every lesson plan is built individually around the child.</p>
   <p class="about-closing ka"><strong>ვარ ენერგიული, მოტივირებული და კომუნიკაბელური</strong> — ძალიან მიყვარს მათემატიკა და მოსწავლეებთან მუშაობა. ვასწავლი როგორც სასკოლო, ისე კლასგარეშე მასალის გამოყენებით, სასწავლო პროგრამა კი მორგებულია ყოველ ბავშვზე ინდივიდუალურად.</p>
 </section>
-
+ 
 <section id="subjects" style="background:var(--paper-deep); border-top:1px solid var(--grid-line); border-bottom:1px solid var(--grid-line);">
   <div class="section-head">
     <span class="eyebrow"><span class="en">Subjects</span><span class="ka">საგნები</span></span>
@@ -387,7 +387,7 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="schedule">
   <div class="section-head">
     <span class="eyebrow"><span class="en">Schedule &amp; Pricing</span><span class="ka">გრაფიკი და ფასები</span></span>
@@ -409,7 +409,19 @@
     </div>
   </div>
 </section>
-
+ 
+<section id="testimonials" style="background:var(--paper-deep); border-top:1px solid var(--grid-line); border-bottom:1px solid var(--grid-line);">
+  <div class="section-head" style="margin-left:auto; margin-right:auto; text-align:center;">
+    <span class="eyebrow"><span class="en">Testimonials</span><span class="ka">შეფასებები</span></span>
+    <h2><span class="en">What students say</span><span class="ka">რას ამბობენ მოსწავლეები</span></h2>
+  </div>
+  <div class="testimonial-slot">
+    <span class="mark">"</span>
+    <span class="en">Testimonials coming soon.</span>
+    <span class="ka">შეფასებები მალე დაემატება.</span>
+  </div>
+</section>
+ 
 <footer id="contact">
   <div class="footer-inner">
     <h2><span class="en">Let's find your time.</span><span class="ka">შევათანხმოთ დრო.</span></h2>
@@ -431,9 +443,9 @@
         <span class="label">Email</span>
         <span class="value">tekla.tskhadadze@outlook.com</span>
       </a>
-      <a class="contact-card" href="https://www.facebook.com/tekla.tskhadadze.19/" target="_blank" rel="noopener" id="fbLink">
+      <a class="contact-card" href="https://www.facebook.com/tekla.tskhadadze.19/" target="_blank" rel="noopener">
         <span class="label">Facebook</span>
-        <span class="value"><span class="en">Tekla Tskhadadze</span><span class="ka">თეკლა ცხადაძე</span></span>
+        <span class="value">tekla.tskhadadze.19</span>
       </a>
     </div>
     <div class="foot-bottom">
@@ -443,7 +455,7 @@
     </div>
   </div>
 </footer>
-
+ 
 <script>
   const buttons = document.querySelectorAll('#langToggle button');
   buttons.forEach(btn=>{
@@ -459,3 +471,4 @@
 </script>
 </body>
 </html>
+ 
